@@ -5,17 +5,3 @@
     </section>
   </main>
 </template>
-
-<script>
-export default {
-  async asyncData({ $content, error }) {
-    let posts;
-    try {
-      posts = await $content("projects").fetch();
-    } catch (e) {
-      error({ message: "Projects not found" });
-    }
-    return { posts };
-  },
-}
-</script>
