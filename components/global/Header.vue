@@ -28,7 +28,7 @@
         <li class="py-2 md:my-0 hover:bg-purple-100 lg:hover:bg-transparent">
           <nuxt-link
               class="block pl-4 align-middle text-gray-700 no-underline hover:text-purple-500 border-l-4 border-transparent lg:hover:border-gray-400"
-              to="/projects"
+              to="/discography"
           >
             <span class="pb-1 md:pb-0 text-sm">Discography</span>
           </nuxt-link>
