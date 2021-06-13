@@ -50,10 +50,18 @@ collections:
       - { label: 'Released at', name: 'releasedAt', widget: 'date', default: '', format: 'YYYY MMM Do' }
       - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false }
       - { label: 'Content', name: 'body', widget: 'markdown', required: false }
-      - {
-          label: 'Lyrics',
-          name: 'lyrics',
-          widget: 'list',
-          required: false,
-          fields: [{ label: 'Title', name: 'title', widget: 'string' }, {label: 'Content', name: 'content', widget: 'markdown'}]
-        }
+  - name: 'lyrics'
+    label: 'Lyrics'
+    folder: 'content/lyrics'
+    create: true
+    format: 'frontmatter'
+    slug: '{{slug}}'
+    # editor:
+    #   preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Content', name: 'content', widget: 'markdown', required: false }
+      - label: "Album"
+        name: "album"
+        widget: "relation"
+        collection: "discography"
