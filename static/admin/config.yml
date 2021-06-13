@@ -65,3 +65,5 @@ collections:
         name: "album"
         widget: "relation"
         collection: "discography"
+        value_field: "{{slug}}"
+        search_fields: ['title']
