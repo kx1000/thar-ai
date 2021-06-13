@@ -1,15 +1,17 @@
 <template>
   <main>
     <section v-if="lyrics">
-      <nav class="mb-8" aria-label="go back">
-        <router-back class="block" />
-      </nav>
-
       <article>
         <h2 class="title">Lyrics / {{ album.title }}</h2>
         <h1 class="text-logo">{{ lyrics.title }}</h1>
-        <nuxt-content :document="lyrics" />
-        under content
+        <div class="flex">
+          <div class="w-1/12 mt-10">
+            <router-back class="block" />
+          </div>
+          <div class="w-11/12 mt-1 text-content">
+            <nuxt-content :document="lyrics" />
+          </div>
+        </div>
       </article>
     </section>
   </main>
