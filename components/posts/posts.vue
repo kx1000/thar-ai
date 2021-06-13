@@ -12,7 +12,10 @@
           <span class="flex-1">
             <h6 class="inline-block py-1 px-2 mr-1 bg-gray text-white text-sm font-medium rounded-sm">{{ post.category }}</h6>
             <h3 class="card-title">{{ post.title }}</h3>
-            <p class="mt-2">{{ post.description }}</p>
+            <h6
+                v-if="post.releasedAt"
+                class="self-start inline-block mt-0 py-1 px-2 bg-gray text-white text-base font-medium rounded-sm whitespace-no-wrap"
+            >{{ formatDate(post.releasedAt) }}</h6>
           </span>
           <img
               v-if="post.cover"
@@ -25,12 +28,7 @@
           <span class="w-full">
             <span class="flex justify-between align-baseline">
               <h3 class="card-title">{{ post.title }}</h3>
-              <h6
-                v-if="post.createdAt"
-                class="self-start inline-block mt-0 py-1 px-2 bg-gray text-white text-base font-medium rounded-sm whitespace-no-wrap"
-              >{{ formatDate(post.createdAt) }}</h6>
             </span>
-            <p class="mt-2">{{ post.description }}</p>
           </span>
         </template>
       </nuxt-link>

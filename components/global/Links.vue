@@ -1,38 +1,34 @@
 <template>
   <div>
-    <ul>
+    <ul class="links">
       <li>
         <a href="">
-          youtube
+          <img src="~assets/img/logo/yt_logo.svg" />
         </a>
       </li>
       <li>
         <a href="">
-          youtube
+          <img src="~assets/img/logo/spotify-logo.svg" />
         </a>
       </li>
       <li>
         <a href="">
-          youtube
+          <img src="~assets/img/logo/tidal_logo.svg" />
         </a>
       </li>
       <li>
         <a href="">
-          youtube
+          <img src="~assets/img/logo/AM_logo.svg" />
         </a>
       </li>
     </ul>
-    <div class="grid grid-cols-2">
-      <div>
-        <a href="">
-          fb
+    <div>
+        <a href="" class="inline-block mr-5">
+          <img src="~assets/img/logo/instagram.svg" />
         </a>
-      </div>
-      <div>
-        <a href="">
-          ig
+        <a href="" class="inline-block ml-5">
+          <img src="~assets/img/logo/facebook.svg" />
         </a>
-      </div>
     </div>
   </div>
 </template>
@@ -44,5 +40,8 @@ export default {
 </script>
 
 <style scoped>
-
+.links > li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 </style>
