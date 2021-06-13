@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 .links > li {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 </style>

@@ -1,13 +1,14 @@
 <template>
   <main>
-    <section v-if="post">
+    <section v-if="lyrics">
       <nav class="mb-8" aria-label="go back">
         <router-back class="block" />
       </nav>
 
       <article>
-        <h1 class="">{{ post.title }}</h1>
-        <nuxt-content :document="post" />
+        <h2 class="title">Lyrics / {{ album.title }}</h2>
+        <h1 class="text-logo">{{ lyrics.title }}</h1>
+        <nuxt-content :document="lyrics" />
         under content
       </article>
     </section>
@@ -17,13 +18,15 @@
 <script>
 export default {
   async asyncData({ $content, params, error }) {
-    let post;
+    let lyrics;
+    let album;
     try {
-      post = await $content("lyrics", params.lyrics).fetch();
+      lyrics = await $content("lyrics", params.lyrics).fetch();
+      album = (await $content("discography").where({ slug: lyrics.album }).fetch())[0];
     } catch (e) {
       error({ message: "Lyrics not found" });
     }
-    return { post };
+    return { lyrics, album };
   },
   methods: {
     formatDate(dateString) {

@@ -1,5 +1,5 @@
 <template>
-  <div class="container w-full flex flex-wrap mx-auto mx-0 pt-8 lg:pt-16 mt-16">
+  <div class="container w-full flex flex-wrap mx-auto mx-0 pt-8 lg:pt-8 mt-8">
     <div class="w-full lg:w-3/12 lg:px-6 text-xl text-gray-800 leading-normal">
      <div class="lg:fixed">
        <nuxt-link class="text-red-600 mb-6 block" to="/">
@@ -19,12 +19,3 @@
     </div>
   </div>
 </template>
-
-<style>
-  .logo {
-    text-transform: uppercase;
-    font-size: 32px;
-    letter-spacing: 12px;
-    font-family: 'TharAi';
-  }
-</style>
