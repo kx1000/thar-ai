@@ -20,7 +20,6 @@
 <script>
 export default {
   async asyncData({ $content, error }) {
-    let posts;
     let albums;
     try {
       albums = await $content('discography').fetch();

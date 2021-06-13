@@ -2,7 +2,7 @@
   <main>
     <section v-if="posts" class="w-full max-w-5xl mx-auto">
       <h1 class="title">Discography</h1>
-      <posts post-type="discography" :amount="10" />
+      <posts post-type="discography" :sortBy="{ key: 'releasedAt', direction: 'desc' }" :amount="10" />
     </section>
   </main>
 </template>

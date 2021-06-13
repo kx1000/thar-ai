@@ -47,7 +47,7 @@ collections:
     preview_path: 'discography/{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Released at', name: 'releasedAt', widget: 'date', default: '', format: 'YYYY MMM Do' }
+      - { label: 'Released at', name: 'releasedAt', widget: 'date', default: '', format: 'YYYY.MM.DD' }
       - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false }
       - { label: 'Content', name: 'body', widget: 'markdown', required: false }
   - name: 'lyrics'

@@ -10,12 +10,11 @@
       >
         <template v-if="postType === 'discography'">
           <span class="flex-1">
-            <h6 class="inline-block py-1 px-2 mr-1 bg-gray text-white text-sm font-medium rounded-sm">{{ post.category }}</h6>
             <h3 class="card-title">{{ post.title }}</h3>
             <h6
                 v-if="post.releasedAt"
                 class="self-start inline-block mt-0 py-1 px-2 bg-gray text-white text-base font-medium rounded-sm whitespace-no-wrap"
-            >{{ formatDate(post.releasedAt) }}</h6>
+            >{{ post.releasedAt }}</h6>
           </span>
           <img
               v-if="post.cover"
@@ -88,6 +87,7 @@
     },
     methods: {
       formatDate(dateString) {
+        console.log(dateString);
         const date = new Date(dateString)
         return date.toLocaleDateString(process.env.lang) || ''
       },
