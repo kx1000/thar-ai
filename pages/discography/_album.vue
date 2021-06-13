@@ -15,14 +15,6 @@
         <h1 class="">{{ post.title }}</h1>
         <p class="mt-1 mb-8 text-primary-600 dark:text-primary-400">{{ post.description }}</p>
         <nuxt-content :document="post" />
-        <div v-if="post.gallery" class="nuxt-content">
-          <img
-            v-for="image in post.gallery"
-            class="image"
-            :key="image.id"
-            :src="image"
-          >
-        </div>
       </article>
     </section>
   </main>
@@ -33,9 +25,9 @@ export default {
   async asyncData({ $content, params, error }) {
     let post;
     try {
-      post = await $content("discography", params.project).fetch();
+      post = await $content("discography", params.album).fetch();
     } catch (e) {
-      error({ message: "Project not found" });
+      error({ message: "Album not found" });
     }
     return { post };
   },

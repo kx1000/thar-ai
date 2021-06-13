@@ -16,7 +16,7 @@
           <nuxt-link to="/discography" class="menu-item my-5 p-2">Discography</nuxt-link>
         </li>
         <li class="my-5">
-          <nuxt-link to="/blog" class="menu-item my-5 p-2">Lyrics</nuxt-link>
+          <nuxt-link to="/lyrics" class="menu-item my-5 p-2">Lyrics</nuxt-link>
         </li>
         <li class="my-5">
           <nuxt-link to="/contact" class="menu-item my-5 p-2">Contact</nuxt-link>

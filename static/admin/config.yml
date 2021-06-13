@@ -1,4 +1,4 @@
-site_url: https://ntn-boilerplate.netlify.app/
+site_url: https://thar-ai.netlify.app/
 logo_url: https://ntn-boilerplate.netlify.app/icon.png
 
 publish_mode: editorial_workflow
@@ -61,7 +61,7 @@ collections:
     fields:
       - { label: 'Number', name: 'number', widget: 'number', required: true }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Content', name: 'content', widget: 'markdown', required: false }
+      - { label: 'Content', name: 'body', widget: 'markdown', required: false }
       - label: "Album"
         name: "album"
         widget: "relation"
