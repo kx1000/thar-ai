@@ -22,10 +22,15 @@ export default {
   async asyncData({ $content, error }) {
     let albums;
     try {
-      albums = await $content('discography').fetch();
+      albums = await $content('discography')
+          .sortBy('releaseDt', 'desc')
+          .fetch();
 
       await albums.forEach(async album => {
-        album.lirycs = await $content("lyrics").where({ album: album.slug }).sortBy('number').fetch();
+        album.lirycs = await $content("lyrics")
+            .where({ album: album.slug })
+            .sortBy('number')
+            .fetch();
       });
     } catch (e) {
       error({ message: "Lyrics not found" });
