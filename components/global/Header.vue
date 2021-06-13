@@ -7,39 +7,19 @@
         </svg>
       </button>
     </div>
-    <div v-bind:class="{hidden: isMenuHidden}" class="w-full sticky inset-0 h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 border border-gray-400 lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent z-20" style="top:5em;">
+    <div v-bind:class="{hidden: isMenuHidden}" class="w-full sticky inset-0 h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 lg:shadow-none lg:bg-transparent z-20" style="top:5em;">
       <ul class="list-reset">
-        <li class="py-2 md:my-0 hover:bg-purple-100 lg:hover:bg-transparent">
-          <nuxt-link
-              class="block pl-4 align-middle text-gray-700 no-underline hover:text-purple-500 border-l-4 border-transparent lg:hover:border-gray-400"
-              to="/biography"
-          >
-            <span class="pb-1 md:pb-0 text-sm">Biography</span>
-          </nuxt-link>
+        <li class="my-5">
+          <nuxt-link to="/biography" class="menu-item my-5 p-2">Biography</nuxt-link>
         </li>
-        <li class="py-2 md:my-0 hover:bg-purple-100 lg:hover:bg-transparent">
-          <nuxt-link
-              class="block pl-4 align-middle text-gray-700 no-underline hover:text-purple-500 border-l-4 border-transparent lg:hover:border-gray-400"
-              to="/discography"
-          >
-            <span class="pb-1 md:pb-0 text-sm">Discography</span>
-          </nuxt-link>
+        <li class="my-5">
+          <nuxt-link to="/discography" class="menu-item my-5 p-2">Discography</nuxt-link>
         </li>
-        <li class="py-2 md:my-0 hover:bg-purple-100 lg:hover:bg-transparent">
-          <nuxt-link
-              class="block pl-4 align-middle text-gray-700 no-underline hover:text-purple-500 border-l-4 border-transparent lg:hover:border-gray-400"
-              to="/blog"
-          >
-            <span class="pb-1 md:pb-0 text-sm">Lyrics</span>
-          </nuxt-link>
+        <li class="my-5">
+          <nuxt-link to="/blog" class="menu-item my-5 p-2">Lyrics</nuxt-link>
         </li>
-        <li class="py-2 md:my-0 hover:bg-purple-100 lg:hover:bg-transparent">
-          <nuxt-link
-              class="block pl-4 align-middle text-gray-700 no-underline hover:text-purple-500 border-l-4 border-transparent lg:hover:border-gray-400"
-              to="/contact"
-          >
-            <span class="pb-1 md:pb-0 text-sm">Contact</span>
-          </nuxt-link>
+        <li class="my-5">
+          <nuxt-link to="/contact" class="menu-item my-5 p-2">Contact</nuxt-link>
         </li>
       </ul>
     </div>
@@ -63,36 +43,14 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.scrim-bg {
-  &::before {
-    content: '';
-    z-index: -1;
-    background-color: var(--bg);
-    @apply absolute bottom-0 inset-x-0 h-12 mb-4 transition-colors duration-200 ease-in-out;
-  }
-  &::after {
-    content: '';
-    z-index: -1;
-    opacity: 1;
-    animation: fadeIn1 500ms ease-in-out;
-    @apply pointer-events-none absolute bottom-0 inset-x-0 h-16 -mb-12;
-    background: linear-gradient(to bottom, #111827, cubic-bezier(0.15, 0, 0.45, 1), transparent);
-  }
-}
-.nuxt-link-exact-active {
-  @apply text-gray-200 border-gray-400 bg-gray-800 bg-opacity-25 cursor-default;
+.menu-item {
+  color: white;
+  letter-spacing: 10px;
+  text-transform: uppercase;
 }
 
-.light-mode {
-  & .scrim-bg {
-    &::after {
-      animation-name: fadeIn2;
-      background: linear-gradient(to bottom, #e5e7eb, cubic-bezier(0.15, 0, 0.45, 1), transparent);
-    }
-  }
-  & .nuxt-link-exact-active {
-    @apply text-primary-700 border-gray-600 bg-gray-100;
-  }
+.nuxt-link-active {
+  @apply text-white bg-red-700 cursor-default;
 }
 
 /* Need two because of smoother switching between color modes */
