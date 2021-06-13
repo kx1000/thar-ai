@@ -6,7 +6,7 @@ cover: https://www.fillmurray.com/g/400/200
 gallery:
   - https://www.fillmurray.com/g/800/400
   - https://www.fillmurray.com/600/600
-releasedAt: 2021 Jun 8th
+releasedAt: 2020.03.03
 ---
 
 It is easy to write **markdown**-*enabled* content like this placeholder text, with support for images.
