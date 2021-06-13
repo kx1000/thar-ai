@@ -1,4 +1,5 @@
 ---
+number: 2
 title: test
 content: |-
   sadsad
