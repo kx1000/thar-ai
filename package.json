@@ -1,8 +1,8 @@
 {
-  "name": "ntn-boilerplate",
+  "name": "thar-ai",
   "version": "2.0.1",
-  "description": "Nuxt-Tailwind-NetlifyCMS boilerplate",
-  "author": "Sven Parker <sven@svenparker.com> (https://svenparker.com)",
+  "description": "THAR AI",
+  "author": "Sven Parker <sven@svenparker.com> (https://svenparker.com) customized by Kacper Rogula (kacper.rogula@gmail.com)",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
