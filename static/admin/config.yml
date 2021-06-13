@@ -59,6 +59,7 @@ collections:
     # editor:
     #   preview: true
     fields:
+      - { label: 'Number', name: 'number', widget: 'number', required: true }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Content', name: 'content', widget: 'markdown', required: false }
       - label: "Album"
