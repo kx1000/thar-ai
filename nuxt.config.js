@@ -43,11 +43,11 @@ export default {
       {
         rel: 'preload',
         as: 'style',
-        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap'
+        href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap'
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap',
         media: 'print',
         onload: `this.media='all'`
       }
@@ -55,7 +55,7 @@ export default {
     noscript: [
       {
         innerHTML:
-          '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">'
+          '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap">'
       }
     ],
     __dangerouslyDisableSanitizers: ['noscript']
