@@ -56,6 +56,6 @@ collections:
           widget: 'list',
           required: false,
           fields:
-            - { label: 'Title', name: 'title', widget: 'string' }
+            - { label: 'Title', name: 'title', widget: 'string' },
             - {label: 'Content', name: 'content', widget: 'markdown'}
         }
