@@ -6,7 +6,7 @@ cover: https://placebear.com/400/200
 gallery:
   - https://placebear.com/g/800/400
   - https://placebear.com/600/600
-releasedAt: 2021 Jun 9th
+releasedAt: 2021.08.03
 ---
 
 It is easy to write **markdown**-*enabled* content like this placeholder text, with support for images.
