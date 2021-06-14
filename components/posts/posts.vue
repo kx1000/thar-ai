@@ -1,24 +1,26 @@
 <template>
-  <ul v-if="posts.length > 0" class="cards">
+  <ul v-if="posts.length > 0">
     <li
       v-for="(post, index) in posts"
       :key="index"
+      class="mb-10"
     >
       <nuxt-link
         :to="`${postType}/${post.slug}`"
-        class="card card--clickable"
       >
         <template v-if="postType === 'discography'">
-          <span class="flex-1">
-            <h3 class="card-title">{{ post.title }}</h3>
-            <h6
-                v-if="post.releasedAt"
-                class="self-start inline-block mt-0 py-1 px-2 bg-gray text-white text-base font-medium rounded-sm whitespace-no-wrap"
-            >{{ post.releasedAt }}</h6>
+          <span class="text-content">
+            <h3 class="mb-4">
+              {{ post.title }}
+              <span
+                  v-if="post.releasedAt"
+                  class="inline-block mt-0 py-1 px-2 bg-gray text-white whitespace-no-wrap"
+              >{{ post.releasedAt }}</span>
+            </h3>
+
           </span>
           <img
               v-if="post.cover"
-              class="cover-image"
               :src="post.cover"
           >
         </template>
