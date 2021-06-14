@@ -1,15 +1,12 @@
 <template>
   <main>
-    <section v-if="albums" class="w-full max-w-5xl mx-auto">
+    <section v-if="filteredAlbums" class="w-full max-w-5xl mx-auto">
       <h1 class="title">Lyrics</h1>
-      <div v-for="album in albums">
-        <h1>album: {{ album.title }}</h1>
+      <div v-for="album in filteredAlbums">
+        <h1 class="text-logo mb-6 mt-10">{{ album.title }}</h1>
         <p v-for="lyric in album.lirycs">
-          <nuxt-link
-              :to="`lyrics/${lyric.slug}`"
-              class="card card--clickable"
-          >
-           {{ lyric.number }} {{ lyric.title }}
+          <nuxt-link :to="`lyrics/${lyric.slug}`" class="text-content no-underline font-semibold lyric-link">
+            <span class="text-red-700 mr-4">{{ formatLyricNumber(lyric.number) }}.</span> {{ lyric.title }}
           </nuxt-link>
         </p>
       </div>
@@ -19,6 +16,18 @@
 
 <script>
 export default {
+  methods: {
+    formatLyricNumber(number) {
+      return number < 10 ? '0' + number : number;
+    }
+  },
+  computed: {
+    filteredAlbums() {
+      return this.albums.filter(album => {
+        return album.lirycs.length > 0;
+      });
+    }
+  },
   async asyncData({ $content, error }) {
     let albums;
     try {
@@ -39,3 +48,11 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.lyric-link {
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: block;
+}
+</style>

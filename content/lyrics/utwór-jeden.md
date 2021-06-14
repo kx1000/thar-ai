@@ -1,6 +1,6 @@
 ---
 number: 1
-title: utwór jeden
+title: Utwór jeden
 album: test-album
 ---
 asdasdasd

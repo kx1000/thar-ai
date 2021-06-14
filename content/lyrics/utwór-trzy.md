@@ -1,6 +1,6 @@
 ---
 number: 3
-title: utwór trzy
+title: Utwór trzy
 album: test-album
 ---
 asdas

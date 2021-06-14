@@ -1,6 +1,6 @@
 ---
 number: 2
-title: test
+title: Test
 content: |-
   sadsad
 

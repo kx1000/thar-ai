@@ -1,6 +1,6 @@
 ---
 number: 2
-title: utwór dwa
+title: Utwór dwa
 album: test-album
 ---
 asd saassadas
