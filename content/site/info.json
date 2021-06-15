@@ -1,6 +1,12 @@
 {
+  "youtube": "https://google.com",
+  "facebook": "https://google.com",
+  "appleMusic": "https://google.com",
   "sitename": "Thar Ai",
-  "sitedescription": "Thar Ai",
+  "instagram": "https://google.com",
+  "biography": "Biography test :)",
   "sitelang": "en-US",
-  "biography": "Biography test :)"
+  "sitedescription": "Thar Ai",
+  "tidal": "https://google.com",
+  "spotify": "https://google.com"
 }
