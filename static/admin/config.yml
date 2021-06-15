@@ -37,6 +37,12 @@ collections:
             }
           - { label: 'Biography', name: 'biography', widget: 'markdown', required: false }
           - { label: Site Email, name: siteemail, widget: string, required: false }
+          - { label: Youtube, name: youtube, widget: string, required: false }
+          - { label: Spotify, name: spotify, widget: string, required: false }
+          - { label: Tidal, name: tidal, widget: string, required: false }
+          - { label: Apple Music, name: appleMusic, widget: string, required: false }
+          - { label: Instagram, name: instagram, widget: string, required: true }
+          - { label: Facebook, name: facebook, widget: string, required: true }
   - name: 'discography'
     label: 'Discography'
     label_singular: 'Discography'
