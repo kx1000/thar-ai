@@ -36,14 +36,17 @@
 <script>
 export default {
   name: "Links",
-  async asyncData({ $content, error }) {
-    let site;
-    try {
-      site = (await $content("site").fetch());
-    } catch (e) {
-      error({ message: "Biography not found" });
+  data() {
+    return {
+      site: undefined,
     }
-    return { site };
+  },
+  async fetch() {
+    try {
+      this.site = (await this.$content("site").fetch())[0];
+    } catch (e) {
+      error({ message: "Site content not found" });
+    }
   },
 }
 </script>
