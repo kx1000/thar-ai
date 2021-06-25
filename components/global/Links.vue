@@ -22,7 +22,7 @@
         </a>
       </li>
     </ul>
-    <div v-if="site">
+    <div v-if="site" class="socials">
         <a :href="site.instagram" target="_blank" class="inline-block mr-5">
           <img src="~assets/img/logo/instagram.svg" />
         </a>
@@ -55,5 +55,22 @@ export default {
 .links > li {
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .links > li {
+    display: block;
+    text-align: center;
+  }
+
+  .links > li > a {
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  .socials {
+    margin: 0 auto;
+    width: 85px;
+  }
 }
 </style>
