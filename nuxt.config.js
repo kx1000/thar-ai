@@ -134,8 +134,8 @@ export default {
   },
   pwa: {
     icon: {
-      source: 'assets/img/android-chrome-icon.png2',
-      filename: 'android-chrome-icon.png2'
+      source: 'assets/img/android-chrome-icon.png',
+      filename: 'android-chrome-icon.png'
     },
     manifest: {
       name: 'THAR AI',
