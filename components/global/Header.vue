@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="w-full sticky inset-0 h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 lg:shadow-none lg:bg-transparent z-20" style="top:5em;">
-      <ul class="list-reset">
+    <div class="w-full sticky inset-0 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 lg:shadow-none lg:bg-transparent z-20" style="top:5em;">
+      <ul class="ml-6 lg:ml-0 list-reset">
         <li class="my-5">
           <nuxt-link to="/biography" class="menu-item my-5 p-2">Biography</nuxt-link>
         </li>
@@ -27,9 +27,13 @@ export default {
 
 <style lang="postcss" scoped>
 .menu-item {
-  color: white;
   letter-spacing: 10px;
   text-transform: uppercase;
+  cursor: pointer !important;
+}
+
+.menu-item:hover {
+  background: #E3061E;
 }
 
 .nuxt-link-active {

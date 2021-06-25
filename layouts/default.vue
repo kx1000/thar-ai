@@ -3,7 +3,7 @@
     <div class="w-full lg:w-3/12 lg:px-6 text-xl text-gray-800 leading-normal">
      <div class="lg:fixed">
        <nuxt-link class="text-red-600 mb-6 block" to="/">
-         <img src="~assets/img/tharai_logo_v1.svg" />
+         <img src="~assets/img/tharai_logo_v1.svg" class="m-auto" />
        </nuxt-link>
        <Header class="mt-3" />
      </div>
@@ -14,8 +14,14 @@
         </div>
       </div>
     </div>
-    <div class="w-full lg:w-9/12 mt-5 lg:mt-7 text-white leading-normal">
+    <div class="w-full lg:w-9/12 mt-1 lg:mt-7 text-white leading-normal">
       <nuxt />
+      <div class="sm:block lg:hidden lg:fixed bottom-0">
+        <Links />
+        <div class="copyright text-red-700 uppercase my-5 text-sm font-semibold text-center">
+          Copyright by Thar Ai 2021 ©
+        </div>
+      </div>
     </div>
   </div>
 </template>
