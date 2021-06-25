@@ -7,7 +7,7 @@
        </nuxt-link>
        <Header class="mt-3" />
      </div>
-      <div class="hidden lg:block lg:fixed bottom-0">
+      <div class="hidden lg:block lg:fixed bottom-0 ml-3">
         <Links />
         <div class="copyright text-red-700 uppercase my-5 text-sm font-semibold">
           Copyright by Thar Ai 2021 ©
