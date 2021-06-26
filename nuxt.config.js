@@ -69,7 +69,8 @@ export default {
    */
   css: [
       '@/assets/css/main.pcss',
-      'hover.css'
+      'hover.css',
+      'animate.css'
   ],
   /*
    ** Plugins to load before mounting the App

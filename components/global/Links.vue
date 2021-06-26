@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="animate__animated animate__fadeIn animate__delay-3s">
     <ul v-if="site" class="links">
       <li v-if="site.youtube">
         <a :href="site.youtube" target="_blank" class="hvr-grow">

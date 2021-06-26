@@ -1,11 +1,11 @@
 <template>
   <div class="container w-full flex flex-wrap mx-auto mx-0 pt-8 lg:pt-8 mt-8">
     <div class="w-full lg:w-3/12 lg:px-6 text-xl text-gray-800 leading-normal">
-     <div class="lg:fixed">
-       <nuxt-link class="text-red-600 mb-6 block hvr-grow" to="/">
+      <div class="lg:fixed">
+       <nuxt-link class="text-red-600 mb-6 block hvr-grow animate__animated animate__fadeIn animate__delay-1s" to="/">
          <img src="~assets/img/tharai_logo_v1.svg" class="m-auto" />
        </nuxt-link>
-       <Header class="mt-3" />
+       <Header class="mt-3 animate__animated animate__fadeIn animate__delay-2s" />
      </div>
       <div class="hidden lg:block lg:fixed bottom-0 ml-3">
         <Links />
