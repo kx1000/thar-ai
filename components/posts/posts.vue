@@ -6,23 +6,22 @@
       class="mb-10"
     >
       <nuxt-link
-        :to="`${postType}/${post.slug}`"
+        :to="`${postType}/${post.slug}`" class="hvr-float"
       >
         <template v-if="postType === 'discography'">
           <span class="text-content">
-            <h3 class="mb-4">
+            <h3 class="text-logo mb-4">
               {{ post.title }}
-              <span
-                  v-if="post.releasedAt"
-                  class="inline-block mt-0 py-1 px-2 bg-gray text-white whitespace-no-wrap"
-              >{{ post.releasedAt }}</span>
             </h3>
-
           </span>
           <img
               v-if="post.cover"
               :src="post.cover"
           >
+          <span
+              v-if="post.releasedAt"
+              class="inline-block mt-0 py-1 px-2 bg-red-700 text-white whitespace-no-wrap text-content"
+          >{{ post.releasedAt }}</span>
         </template>
 
         <template v-else>
