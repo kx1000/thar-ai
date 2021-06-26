@@ -20,6 +20,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: this.post.title + ' ∙ THAR AI',
+    }
+  },
   async asyncData({ $content, params, error }) {
     let post;
     try {

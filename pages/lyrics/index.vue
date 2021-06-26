@@ -16,6 +16,9 @@
 
 <script>
 export default {
+  head: {
+    title: 'LYRICS ∙ THAR AI',
+  },
   methods: {
     formatLyricNumber(number) {
       return number < 10 ? '0' + number : number;

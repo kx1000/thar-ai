@@ -9,6 +9,9 @@
 
 <script>
 export default {
+  head: {
+    title: 'DISCOGRAPHY ∙ THAR AI',
+  },
   async asyncData({ $content, error }) {
     let posts;
     try {

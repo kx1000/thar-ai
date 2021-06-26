@@ -28,6 +28,14 @@
   </main>
 </template>
 
+<script>
+export default {
+  head: {
+    title: 'CONTACT ∙ THAR AI',
+  },
+}
+</script>
+
 <style scoped>
 input, textarea {
   width: 100%;

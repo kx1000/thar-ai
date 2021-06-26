@@ -19,6 +19,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: this.lyrics.title + ' / ' + this.album.title + ' ∙ THAR AI',
+    }
+  },
   async asyncData({ $content, params, error }) {
     let lyrics;
     let album;
