@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link @click.native="to ? null : $router.go(-2)" :to="to ? to : '/'" class="back inline-block">
+  <nuxt-link @click.native="to ? null : $router.go(-2)" :to="to ? to : '/'" class="back inline-block hvr-grow">
     <img src="~assets/img/arrow-circle-left.svg" />
   </nuxt-link>
 </template>
