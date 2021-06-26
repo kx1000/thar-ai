@@ -2,31 +2,31 @@
   <div>
     <ul v-if="site" class="links">
       <li v-if="site.youtube">
-        <a :href="site.youtube" target="_blank">
+        <a :href="site.youtube" target="_blank" class="hvr-grow">
           <img src="~assets/img/logo/yt_logo.svg" />
         </a>
       </li>
       <li v-if="site.spotify">
-        <a :href="site.spotify" target="_blank">
+        <a :href="site.spotify" target="_blank" class="hvr-grow">
           <img src="~assets/img/logo/spotify-logo.svg" />
         </a>
       </li>
       <li v-if="site.tidal">
-        <a :href="site.tidal" target="_blank">
+        <a :href="site.tidal" target="_blank" class="hvr-grow">
           <img src="~assets/img/logo/tidal_logo.svg" />
         </a>
       </li>
       <li v-if="site.appleMusic">
-        <a :href="site.appleMusic" target="_blank">
+        <a :href="site.appleMusic" target="_blank" class="hvr-grow">
           <img src="~assets/img/logo/AM_logo.svg" />
         </a>
       </li>
     </ul>
     <div v-if="site" class="socials">
-        <a :href="site.instagram" target="_blank" class="inline-block mr-5">
+        <a :href="site.instagram" target="_blank" class="inline-block mr-5 hvr-grow">
           <img src="~assets/img/logo/instagram.svg" />
         </a>
-        <a :href="site.facebook" target="_blank" class="inline-block ml-5">
+        <a :href="site.facebook" target="_blank" class="inline-block ml-5 hvr-grow">
           <img src="~assets/img/logo/facebook.svg" />
         </a>
     </div>
