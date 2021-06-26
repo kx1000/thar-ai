@@ -2,7 +2,7 @@
   <main>
     <section class="w-full max-w-5xl mx-auto">
       <h1 class="title">Contact</h1>
-      <form name="contact" netlify-honeypot="bot-field" data-netlify="true">
+      <form name="contact" netlify-honeypot="bot-field" data-netlify="true" class="text-content">
         <p>
           <label>Your Name<br>
             <input type="text" name="name" />
@@ -21,9 +21,27 @@
           </label>
         </p>
         <p>
-          <button type="submit">Send</button>
+          <button type="submit" class="text-content hvr-grow">SEND</button>
         </p>
       </form>
     </section>
   </main>
 </template>
+
+<style scoped>
+input, textarea {
+  width: 100%;
+  border-radius: 0;
+  color: #000000;
+  padding: 5px 10px;
+}
+
+button {
+  background-color: #E3061E;
+  padding: 5px 10px;
+}
+
+textarea:focus, input:focus{
+  outline: #E3061E solid 1px;
+}
+</style>
