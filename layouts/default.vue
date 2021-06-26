@@ -16,7 +16,7 @@
     </div>
     <div class="w-full lg:w-9/12 mt-1 lg:mt-7 text-white leading-normal">
       <nuxt />
-      <div class="sm:block lg:hidden lg:fixed bottom-0">
+      <div class="block lg:hidden lg:fixed bottom-0">
         <Links />
         <div class="copyright text-red-700 uppercase my-5 text-sm font-semibold text-center">
           Copyright by Thar Ai 2021 ©

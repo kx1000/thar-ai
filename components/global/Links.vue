@@ -57,7 +57,7 @@ export default {
   margin-bottom: 25px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .links > li {
     display: block;
     text-align: center;
