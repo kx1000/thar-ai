@@ -3,16 +3,16 @@
     <div class="w-full sticky inset-0 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 lg:shadow-none lg:bg-transparent z-20" style="top:5em;">
       <ul class="ml-6 lg:ml-0 list-reset">
         <li class="my-5">
-          <nuxt-link to="/biography" class="menu-item my-5 p-2">Biography</nuxt-link>
+          <nuxt-link to="/biography" class="hvr-shutter-out-vertical menu-item my-5 p-2">Biography</nuxt-link>
         </li>
         <li class="my-5">
-          <nuxt-link to="/discography" class="menu-item my-5 p-2">Discography</nuxt-link>
+          <nuxt-link to="/discography" class="hvr-shutter-out-vertical menu-item my-5 p-2">Discography</nuxt-link>
         </li>
         <li class="my-5">
-          <nuxt-link to="/lyrics" class="menu-item my-5 p-2">Lyrics</nuxt-link>
+          <nuxt-link to="/lyrics" class="hvr-shutter-out-vertical menu-item my-5 p-2">Lyrics</nuxt-link>
         </li>
         <li class="my-5">
-          <nuxt-link to="/contact" class="menu-item my-5 p-2">Contact</nuxt-link>
+          <nuxt-link to="/contact" class="hvr-shutter-out-vertical menu-item my-5 p-2">Contact</nuxt-link>
         </li>
       </ul>
     </div>
@@ -30,10 +30,12 @@ export default {
   letter-spacing: 10px;
   text-transform: uppercase;
   cursor: pointer !important;
+  background: none;
+  display: inline;
 }
 
-.menu-item:hover {
-  background: #E3061E;
+.hvr-shutter-out-vertical:before {
+  background-color: #E3061E;
 }
 
 .nuxt-link-active {
