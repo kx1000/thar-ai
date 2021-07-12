@@ -6,7 +6,9 @@ album: antihuman
 Sailing with no aim but to reach the bottom\
 Waves washing away whatever doubt I had left
 
-Grey sails adorning my ship - they lost all the colours they had - they'll never be whole again
+Grey sails adorning my ship\
+They lost all the colours they had\
+They'll never be whole again
 
 Carrying all the gifts of regret I have been given\
 Sinking in all these thoughts of contempt I am feeling\
@@ -16,10 +18,16 @@ Shouting loud, trusting that every word makes it better
 Slowly losing my voice\
 I scream my lungs out\
 Slowly losing control\
-Nothing seems to work, nothing seems to work, no!
+Nothing seems to work\
+Nothing seems to work
 
-Grey sails adorning my ship - they lost all the colours they had - they'll never be whole again, but none of it matters now\
-Black thoughts controlling my head - they snuck in and stayed here for good - I'll never be free again
+Grey sails adorning my ship\
+They lost all the colours they had\
+They'll never be whole again\
+But none of it matters now\
+Black thoughts controlling my head\
+They snuck in and stayed here for good\
+I'll never be free again
 
 I know I'm not the only one\
 I know you're sailing just the same\
@@ -37,8 +45,13 @@ I know you're sailing just the same\
 I saw it deep within your eyes\
 I saw you're breaking
 
-Grey sails adorning my ship - they lost all the colours they had - they'll never be whole again, but none of it matters now\
-Black thoughts controlling my head - they snuck in and stayed here for good - I'll never be what I once used to be
+Grey sails adorning my ship\
+They lost all the colours they had\
+They'll never be whole again\
+But none of it matters now\
+Black thoughts controlling my head\
+They snuck in and stayed here for good\
+I'll never be what I once used to be
 
-Lyrics: Patryk "Pat"\
+Lyrics: Patryk "Pat" Guściora\
 Music: Thar Ai
