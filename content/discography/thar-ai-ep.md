@@ -1,6 +1,6 @@
 ---
 title: Thar Ai EP
-releasedAt: 2017.06.10
+releasedAt: 2017.03.01
 cover: /img/spotify_1425px.jpg
 ---
 The group's first publication - a self-titled EP consisting of five tracks, released in march 2017 with ex-vocalist Paweł "Pablo" Hrycak.
