@@ -146,6 +146,7 @@ export default {
     },
     manifest: {
       name: 'THAR AI',
+      short_name: 'THAR AI',
       lang: process.env.lang
     },
     meta: {
