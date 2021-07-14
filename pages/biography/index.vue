@@ -2,8 +2,7 @@
   <main>
     <section class="w-full max-w-5xl mx-auto">
       <h1 class="title">Biography</h1>
-      <div class="text-content">
-        {{ biography }}
+      <div class="text-content" v-html="$md.render(biography)">
       </div>
     </section>
   </main>
@@ -21,6 +20,7 @@ export default {
     } catch (e) {
       error({ message: "Biography not found" });
     }
+
     return { biography };
   },
 }
