@@ -35,7 +35,7 @@ export default {
     let albums;
     try {
       albums = await $content('discography')
-          .sortBy('releaseDt', 'desc')
+          .sortBy('releasedAt', 'desc')
           .fetch();
 
       await albums.forEach(async album => {
