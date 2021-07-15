@@ -9,11 +9,27 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   padding: env(safe-area-inset);
-  background: url(~assets/img/bg-min.png) no-repeat right center fixed, black;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  background: black;
+  //background: url(~assets/img/bg-min.png) no-repeat right center fixed, black;
+}
+
+@media only screen and (min-width: 1024px) {
+  html:after {
+    content: '';
+    background: url(~assets/img/bg-min.png) no-repeat right center fixed, black;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    transition: 2s;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
