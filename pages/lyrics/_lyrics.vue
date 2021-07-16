@@ -3,14 +3,18 @@
     <section v-if="lyrics">
       <article>
         <h2 class="title">Lyrics / {{ album.title }}</h2>
-        <h1 class="text-logo">{{ lyrics.title }}</h1>
-        <div class="flex">
-          <div class="w-1/12 mt-10">
-            <router-back class="block" />
+        <div class="md:flex">
+          <div class="md:flex-shrink-0">
+            <router-back class="block mr-3" />
           </div>
-          <div class="w-11/12 mt-1 text-content">
-            <nuxt-content :document="lyrics" />
+          <div>
+            <h1 class="text-logo mt-1">
+              {{ lyrics.title }}
+            </h1>
           </div>
+        </div>
+        <div class="text-content">
+          <nuxt-content :document="lyrics" />
         </div>
       </article>
     </section>
