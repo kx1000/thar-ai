@@ -4,9 +4,9 @@
       <h1 class="title">Lyrics</h1>
       <div v-for="album in filteredAlbums">
         <h1 class="text-logo mb-6 mt-10">{{ album.title }}</h1>
-        <p v-for="lyric in album.lirycs">
+        <p v-for="lyric in album.lirycs" class="my-6">
           <nuxt-link :to="`lyrics/${lyric.slug}`" class="text-content no-underline font-semibold lyric-link hvr-underline-from-left">
-            <span class="text-red-700 mr-4">{{ formatLyricNumber(lyric.number) }}.</span> {{ lyric.title }}
+            <span class="text-red-700 w-12 inline-block">{{ formatLyricNumber(lyric.number) }}.</span> {{ lyric.title }}
           </nuxt-link>
         </p>
       </div>
@@ -53,10 +53,6 @@ export default {
 </script>
 
 <style scoped>
-p {
-  margin-bottom: 22px;
-}
-
 .lyric-link {
   text-decoration: none;
   display: inline;
