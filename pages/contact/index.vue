@@ -40,9 +40,12 @@ export default {
 input, textarea {
   width: 100%;
   border-radius: 0;
-  color: #000000;
+  color: #fff;
+  background: black;
   padding: 5px 10px;
-  border: none;
+  border: #E3061E solid 2px;
+  transition: .5s;
+  letter-spacing: 2px;
 }
 
 button {
@@ -51,6 +54,7 @@ button {
 }
 
 textarea:focus, input:focus{
-  outline: #E3061E solid 1px;
+  border-color: rgb(255, 255, 255);
+  outline: none;
 }
 </style>
