@@ -7,11 +7,11 @@
           v-if="post.cover"
           :src="post.cover"
         >
-        <div class="flex">
-          <div class="w-1/12 mt-10">
-            <router-back class="block" />
+        <div class="md:flex">
+          <div class="md:flex-shrink-0 mt-10">
+            <router-back class="block mr-5" />
           </div>
-          <div class="w-11/12 mt-1 text-content">
+          <div class="mt-1 text-content">
             <nuxt-content :document="post" />
           </div>
         </div>

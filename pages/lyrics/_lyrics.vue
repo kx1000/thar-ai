@@ -5,7 +5,7 @@
         <h2 class="title">Lyrics / {{ album.title }}</h2>
         <div class="md:flex">
           <div class="md:flex-shrink-0">
-            <router-back class="block mr-3" />
+            <router-back class="block mr-6" />
           </div>
           <div>
             <h1 class="text-logo mt-1">
