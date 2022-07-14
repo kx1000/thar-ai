@@ -2,38 +2,66 @@
   <main>
     <section class="w-full max-w-5xl mx-auto">
       <h1 class="title">Contact</h1>
-      <form name="contact" netlify-honeypot="bot-field" method="post" data-netlify="true" class="text-content">
-        <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>Your Name<br>
-            <input type="text" name="name" />
+            <input type="text" name="name" v-model="name" />
           </label>
         </p>
         <p>
           <label>
             Your Email<br>
-            <input type="email" name="email" />
+            <input type="email" name="email" v-model="email" />
           </label>
         </p>
         <p>
           <label>
             Message<br>
-            <textarea name="message"></textarea>
+            <textarea name="message" v-model="message"></textarea>
           </label>
         </p>
         <p>
-          <button type="submit" class="text-content hvr-grow">SEND</button>
+          <button @click="send" type="submit" class="text-content hvr-grow">SEND</button>
         </p>
-      </form>
     </section>
   </main>
 </template>
 
 <script>
+const EMAIL_API_TARGET = 'tharai';
+const EMAIL_API_URL = 'https://htp55ft4al.execute-api.us-east-1.amazonaws.com/dev/email';
+
 export default {
   head: {
     title: 'CONTACT ∙ THAR AI',
   },
+  data() {
+    return {
+      email: '',
+      name: '',
+      message: '',
+    }
+  },
+  methods: {
+    async send() {
+      try {
+        await fetch(EMAIL_API_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            email: this.email,
+            name: this.name,
+            message: this.message,
+            target: EMAIL_API_TARGET,
+          })
+        });
+        alert('Message has been sent');
+      } catch (e) {
+        alert('Error. Unable to send the message.');
+      }
+    }
+  }
 }
 </script>
 
