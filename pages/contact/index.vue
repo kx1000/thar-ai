@@ -3,6 +3,7 @@
     <section class="w-full max-w-5xl mx-auto">
       <h1 class="title">Contact</h1>
       <form name="contact" netlify-honeypot="bot-field" method="post" data-netlify="true" class="text-content">
+        <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>Your Name<br>
             <input type="text" name="name" />
