@@ -19,9 +19,14 @@
             <textarea name="message" v-model="message"></textarea>
           </label>
         </p>
-        <p>
-          <button @click="send" type="submit" class="text-content hvr-grow">SEND</button>
-        </p>
+        <div class="mt-3">
+          <button @click="send" v-if="!isLoading" type="submit" class="text-content hvr-grow">
+            SEND
+          </button>
+          <div v-else class="animate__animated animate__fadeIn">
+            Sending...
+          </div>
+        </div>
     </section>
   </main>
 </template>
@@ -39,10 +44,12 @@ export default {
       email: '',
       name: '',
       message: '',
+      isLoading: false,
     }
   },
   methods: {
     async send() {
+      this.isLoading = true;
       try {
         await fetch(EMAIL_API_URL, {
           method: 'POST',
@@ -60,6 +67,7 @@ export default {
       } catch (e) {
         alert('Error. Unable to send the message.');
       }
+      this.isLoading = false;
     }
   }
 }
